@@ -55,28 +55,32 @@ and open the template in the editor.
             </div>
             <div class="col-md-3 col-sm-3 ">
               <div class="thumbnail">
-                <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+                <img src="nainital.jpg" alt="Location_Image" class="front-page">
                 <div class="caption">
-                  <h4>Location</h4>
-                  <p>Content To the Location</p>
+                  <h4>Nainital</h4>
+                  <p>Best Time To Visit</p>
+                  <small>All around the year </small>
+
             </div>
           </div>
         </div>
             <div class="col-md-3 col-sm-3 ">
               <div class="thumbnail">
-                <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+                <img src="hemkund.jpg" alt="Location_Image" class="img-responsive">
                 <div class="caption">
-                  <h4>Location</h4>
-                  <p>Content To the Location</p>
-            </div>
+                  <h4>Hem Kund Sahib</h4>
+                  <p>Best Time To Visit</p>
+                  <small>June to October</small>
+                  </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-3">
         <div class="thumbnail" >
           <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
           <div class="caption">
-            <h4>Location</h4>
-            <p>Content To the Location</p>
+            <h4>Auli</h4>
+            <p>Best Time To Visit</p>
+            <small>November to March </small>
       </div>
     </div>
   </div>
@@ -85,122 +89,80 @@ and open the template in the editor.
     <div class="row">
     <div class="col-md-3 col-sm-3">
       <div class="thumbnail" >
-        <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+        <img src="badrinath.jpg" alt="Location_Image" class="img-responsive">
         <div class="caption">
-          <h4>Location</h4>
-          <p>Content To the Location</p>
+          <h4>Badrinath</h4>
+          <p>Best Time To Visit</p>
+          <small>May to November </small>
     </div>
   </div>
     </div>
     <div class="col-md-3 col-sm-3 ">
       <div class="thumbnail">
-        <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+        <img src="kedarnath.jpg" alt="Location_Image" class="img-responsive">
         <div class="caption">
-          <h4>Location</h4>
-          <p>Content To the Location</p>
+          <h4>Kedarnath</h4>
+          <p>Best Time To Visit</p>
+          <small>May to October </small>
     </div>
   </div>
 </div>
     <div class="col-md-3 col-sm-3 ">
       <div class="thumbnail">
-        <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+        <img src="gangotri.jpg" alt="Location_Image" class="img-responsive">
         <div class="caption">
-          <h4>Location</h4>
-          <p>Content To the Location</p>
-    </div>
+          <h4>Gangotri</h4>
+          <p>Best Time To Visit</p>
+          <small>April to November </small>
+          </div>
 </div>
 </div>
 <div class="col-md-3 col-sm-3">
 <div class="thumbnail" >
-  <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+  <img src="Yamunotri.jpg" alt="Location_Image" class="img-responsive">
   <div class="caption">
-    <h4>Location</h4>
-    <p>Content To the Location</p>
+    <h4>Yamunotri</h4>
+    <p>Best Time To Visit</p>
+    <small>April to November </small>
 </div>
 </div>
 </div>
 </div>
 <hr class="cust-hr"/>
-<div class="row">
+<div class="row-fluid text-center">
 <div class="col-md-3 col-sm-3">
   <div class="thumbnail" >
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+    <img src="dehradun.jpg" alt="Location_Image" class="img-responsive">
     <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
+      <h4>Dehradun</h4>
+      <p>Best Time To Visit</p>
+      <small>All around the year </small>
 </div>
 </div>
 </div>
 <div class="col-md-3 col-sm-3 ">
   <div class="thumbnail">
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+    <img src="haridwar.jpg" alt="Location_Image" class="img-responsive">
     <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
-</div>
+      <h4>Haridwar</h4>
+      <p>Best Time To Visit</p>
+      <small>August  to Ocotober</small></div>
 </div>
 </div>
 <div class="col-md-3 col-sm-3 ">
   <div class="thumbnail">
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
+    <img src="mussoorie.jpg" alt="Location_Image" class="img-responsive">
     <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
+      <h4>Mussoorie</h4>
+      <p>Best Time To Visit</p>
+      <small>September to March</small></div>
 </div>
 </div>
 </div>
-<div class="col-md-3 col-sm-3">
-<div class="thumbnail" >
-<img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
-<div class="caption">
-<h4>Location</h4>
-<p>Content To the Location</p>
-</div>
-</div>
-</div>
-</div>
-<hr class="cust-hr"/>
-<div class="row">
-<div class="col-md-3 col-sm-3">
-  <div class="thumbnail" >
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
-    <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
-</div>
-</div>
-</div>
-<div class="col-md-3 col-sm-3 ">
-  <div class="thumbnail">
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
-    <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
-</div>
-</div>
-</div>
-<div class="col-md-3 col-sm-3 ">
-  <div class="thumbnail">
-    <img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
-    <div class="caption">
-      <h4>Location</h4>
-      <p>Content To the Location</p>
-</div>
-</div>
-</div>
-<div class="col-md-3 col-sm-3">
-<div class="thumbnail" >
-<img src="http://placehold.it/270x170" alt="Location_Image" class="img-responsive">
-<div class="caption">
-<h4>Location</h4>
-<p>Content To the Location</p>
-</div>
-</div>
+
 </div>
 </div>
   </div>
-</div>
-</div>
     </body>
 </html>
 <?php include 'footer.php' ?>

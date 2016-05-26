@@ -257,7 +257,7 @@ custa{
 
 </style>
 <body style="background-color:rgb(97, 28, 18);">
-  <div class="well" style="width:90%;margin:0 auto;margin-top:10px;alignment:center-block;background-color:rgb(255, 255, 255) !important;">
+  <div class="well" style="width:90%;margin:0 auto;margin-top:10px;alignment:center-block;background-color:rgb(255, 255, 255) !important;margin-bottom:10px;">
   <ol class="breadcrumb">
     <li><a href="index.php">Home</a></li>
     <li><a href="#">Current Weather</a></li>
@@ -269,21 +269,10 @@ custa{
       while ($weather==null)
       {
         ?>
-        <script>
-$(document).ready(function(){
-        $("#plwait").show();
-});
-</script>
         <?php
         $weather = $owm->getWeather('Rishikesh', $units, $lang);
 }
 ?>
-<script>
-$(document).ready(function(){
-$("#plwait").hide();
-});
-</script>
-
 <?php
     }
     catch (OWMException $e) {
@@ -295,7 +284,7 @@ $("#plwait").hide();
       $timestamp=strtotime($weather->lastUpdate->format('r'));
       date_default_timezone_set("Asia/Calcutta");
     echo "Last Update: " . date("l jS \of F Y h:i:s A",$timestamp) ; ?></h4>
-    <div id="plwait">Please Wait...</div>
+
 <div class="row" style="margin-top:0 !important">   <div class="text-strong">Rishikesh</div>
 <div class="text-mid"><?php echo 'Country: '.$weather->city->country; ?></div>
    <div class="text-mid"><?php echo 'Current: '.$weather->temperature->now; ?></div>

@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $('#plwait').hide();
+  });
+  </script>
   <link rel="stylesheet" href="styling.css">
   <?php
   // define variables and set to empty values
@@ -48,12 +53,13 @@
 
     $message = Swift_Message::newInstance("Query regarding location")
       ->setFrom(array($email))
-      ->setTo(array('abhiroj95@gmail.com'))
+      ->setTo(array('sakshiagrawal7700@gmail.com'))
       ->setBody($query);
 
 try{
 
       $result=$mailer->send($message);
+      echo $result;
       if($result){
         echo "<script type='text/javascript'>
       $(document).ready(function(){
@@ -61,7 +67,11 @@ try{
       });
       </script>";
   }
-      else echo $result;
+      else echo "<script type='text/javascript'>
+    $(document).ready(function(){
+    $('#errorModal').modal('show');
+    });
+    </script>";
     }
     catch (Exception $e){
       echo "<script type='text/javascript'>
@@ -83,12 +93,13 @@ try{
 
     $message = Swift_Message::newInstance("HH_Query")
       ->setFrom(array($email))
-      ->setTo(array('abhiroj96@gmail.com'))
+      ->setTo(array('sakshiagrawal7700@gmail.com'))
       ->setBody($query);
 
 try{
 
       $result=$mailer->send($message);
+      echo $result;
       if($result){
         echo "<script type='text/javascript'>
       $(document).ready(function(){
@@ -96,7 +107,11 @@ try{
       });
       </script>";
   }
-      else echo $result;
+      else echo "<script type='text/javascript'>
+    $(document).ready(function(){
+    $('#errorModal').modal('show');
+    });
+    </script>";
     }
     catch (Exception $e){
       echo "<script type='text/javascript'>
@@ -141,10 +156,17 @@ try{
       <script>
       $(document).ready(function(){
         $('#weather').click(function(e){
-          event.preventDefault();
         $('#remove').remove();
-        $('#content_here').load("vendor/cmfcmf/openweathermap-php-api/Examples/CurrentWeather.php");
+        $('#plwait').show();
+        $('#content_here').load("vendor/cmfcmf/openweathermap-php-api/Examples/CurrentWeather.php",function(responseTxt,statusTxt,xhr)
+      {
+        if(statusTxt == "success")
+                $('#plwait').hide();
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+      });
 
+        event.preventDefault();
     });
 });
 
@@ -158,6 +180,7 @@ try{
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div  id="plwait" class="text-center"><img src="preloader.gif"></div>
 <div class="modal fade" id="query_modal" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="vertical-alignment-helper">
