@@ -136,8 +136,21 @@ try{
         <li><a href="#">Tourism</a></li>
         <li><a href="Rishikesh.php">Destinations</a></li>
         <li><a href="#">Sight-Seeing</a></li>
-        <li><a href="vendor/cmfcmf/openweathermap-php-api/Examples/CurrentWeather.php">Weather</a></li>
+        <li><a href="" id="weather">Weather</a></li>
       </ul>
+      <script>
+      $(document).ready(function(){
+        $('#weather').click(function(e){
+          event.preventDefault();
+        $('#remove').remove();
+        $('#content_here').load("vendor/cmfcmf/openweathermap-php-api/Examples/CurrentWeather.php");
+
+    });
+});
+
+      </script>
+
+
       <ul class="nav navbar-nav navbar-right">
           <li><a href="#" data-toggle="modal" data-target="#query_modal">Need Help?</a></li>
       </ul>

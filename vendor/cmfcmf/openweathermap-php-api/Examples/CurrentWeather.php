@@ -1,5 +1,3 @@
-<?php include __DIR__.'/../../../../header.php';
-?>
 <?php
 
 
@@ -267,7 +265,26 @@ custa{
   <div class="container-fluid">
     <h4><?php
     try{
-      $weather = $owm->getWeather('Rishikesh', $units, $lang);
+      $weather="";
+      while ($weather==null)
+      {
+        ?>
+        <script>
+$(document).ready(function(){
+        $("#plwait").show();
+});
+</script>
+        <?php
+        $weather = $owm->getWeather('Rishikesh', $units, $lang);
+}
+?>
+<script>
+$(document).ready(function(){
+$("#plwait").hide();
+});
+</script>
+
+<?php
     }
     catch (OWMException $e) {
       echo 'OpenWeatherMap exception: '.$e->getMessage().' (Code '.$e->getCode().').';
@@ -277,8 +294,8 @@ custa{
       echo "<br />\n";}
       $timestamp=strtotime($weather->lastUpdate->format('r'));
       date_default_timezone_set("Asia/Calcutta");
-
     echo "Last Update: " . date("l jS \of F Y h:i:s A",$timestamp) ; ?></h4>
+    <div id="plwait">Please Wait...</div>
 <div class="row" style="margin-top:0 !important">   <div class="text-strong">Rishikesh</div>
 <div class="text-mid"><?php echo 'Country: '.$weather->city->country; ?></div>
    <div class="text-mid"><?php echo 'Current: '.$weather->temperature->now; ?></div>

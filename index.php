@@ -11,6 +11,10 @@ and open the template in the editor.
     </head>
     <?php include 'header.php' ?>
     <body>
+
+      <div id="content_here">
+      </div>
+<div id="remove">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -195,6 +199,7 @@ and open the template in the editor.
 </div>
 </div>
   </div>
+</div>
 </div>
     </body>
 </html>
